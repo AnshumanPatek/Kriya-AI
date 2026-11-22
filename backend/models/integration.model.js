@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const integrationConnectionSchema = new mongoose.Schema(
   {
-    // AutoMate AI ka logged-in user
+    // Kriya AI ka logged-in user
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",

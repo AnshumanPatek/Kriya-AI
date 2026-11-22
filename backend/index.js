@@ -33,7 +33,7 @@ app.use("/api/payment", paymentRouter);
 
 
 app.listen(PORT, () => {
-  console.log(`AutoMate AI API running at ${PORT}`);
+  console.log(`Kriya AI API running at ${PORT}`);
 
   connectDB().catch((error) => {
     console.error("MongoDB connection failed:", error.message);
