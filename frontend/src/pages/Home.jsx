@@ -153,7 +153,7 @@ export default function Home() {
       const formData = new FormData();
       formData.append("file", selectedImage);
       formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
-      formData.append("folder", "automate-ai/instagram");
+      formData.append("folder", "kriya-ai/instagram");
 
       const response = await fetch(
         `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`,
@@ -444,7 +444,7 @@ console.log(currentUser)
         <header className="z-30 flex h-16 shrink-0 items-center justify-between px-4 sm:px-6">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="grid size-8 place-items-center rounded-lg bg-white text-zinc-900"><Workflow size={17} /></span>
-            <span className="text-sm font-medium tracking-tight">AutoMate AI</span>
+            <span className="text-sm font-medium tracking-tight">Kriya AI</span>
           </Link>
           <div className="flex items-center gap-2.5">
             <DropdownMenu>
@@ -542,7 +542,7 @@ console.log(currentUser)
                   </div>
                 )}
 
-                {chatLoading && <div className="flex items-center gap-3"><div className="grid size-8 place-items-center rounded-lg bg-white text-zinc-900"><Workflow size={15} className="animate-pulse" /></div><div className="text-sm text-zinc-400">{imageUploading ? "Uploading image to Cloudinary..." : "AutoMate AI is thinking..."}</div></div>}
+                {chatLoading && <div className="flex items-center gap-3"><div className="grid size-8 place-items-center rounded-lg bg-white text-zinc-900"><Workflow size={15} className="animate-pulse" /></div><div className="text-sm text-zinc-400">{imageUploading ? "Uploading image to Cloudinary..." : "Kriya AI is thinking..."}</div></div>}
                 {(chatError || agentsError) && <div className="rounded-xl border border-red-500/20 bg-red-500/[0.08] px-4 py-3 text-sm text-red-300">{chatError || agentsError}</div>}
               </div>
             </div>
@@ -592,7 +592,7 @@ console.log(currentUser)
                   </div>
                 </div>
               </form>
-              <p className="mx-auto mt-3 max-w-2xl text-center text-[10px] text-zinc-600">AutoMate AI can make mistakes. Verify important information.</p>
+              <p className="mx-auto mt-3 max-w-2xl text-center text-[10px] text-zinc-600">Kriya AI can make mistakes. Verify important information.</p>
             </div>
           </section>
         </main>
